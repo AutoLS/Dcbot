@@ -105,16 +105,6 @@ client.on("message", message => {
 				var arr = interactions[key];
 				var value = Math.floor(Math.random() * arr.length);
 				
-				if(message.guild.id == "383883748523114497" && key.includes("aut"))
-				{
-					return message.channel.send("noob");
-				}
-				if(message.guild.id == "829015956625162270" && key.includes("auto"))
-				{
-					if(arr[value].includes("gay"))
-						return message.channel.send("straight");
-				}
-				
 				message.channel.send(arr[value]);
 			}
 			else
